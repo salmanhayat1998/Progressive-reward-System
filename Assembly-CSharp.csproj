@@ -57,8 +57,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Progress Reward\Scripts\controller.cs" />
-    <Compile Include="Assets\Progress Reward\Scripts\rewardHolder.cs" />
     <Compile Include="Assets\Progress Reward\Scripts\reward.cs" />
+    <Compile Include="Assets\Progress Reward\Scripts\rewardHolder.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -621,41 +621,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Unity.VSCode.Editor.csproj">
-      <Project>{2F211766-F455-EEB9-0855-CAB28531A842}</Project>
-      <Name>Unity.VSCode.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.TextMeshPro.Editor.csproj">
-      <Project>{2E600A89-5EBF-3F89-3804-9BF1DD60AE3F}</Project>
-      <Name>Unity.TextMeshPro.Editor</Name>
-    </ProjectReference>
     <ProjectReference Include="Unity.VisualStudio.Editor.csproj">
       <Project>{6FD5071C-1881-238B-9022-B491A51B5942}</Project>
       <Name>Unity.VisualStudio.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.Timeline.Editor.csproj">
-      <Project>{532EB8BB-9EBA-0441-A191-50AEAEE6E6EB}</Project>
-      <Name>Unity.Timeline.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Timeline.csproj">
-      <Project>{B7D27D3A-7092-7A41-9819-B9484714628C}</Project>
-      <Name>Unity.Timeline</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.TextMeshPro.csproj">
-      <Project>{241DC316-F32B-2F68-04A8-740AEFD15A62}</Project>
-      <Name>Unity.TextMeshPro</Name>
-    </ProjectReference>
     <ProjectReference Include="UnityEditor.UI.csproj">
       <Project>{750450B6-F08D-E9DB-0B38-A1ED319DDF4F}</Project>
       <Name>UnityEditor.UI</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.PlasticSCM.Editor.csproj">
-      <Project>{ABD62219-F3A6-813F-8302-1125BCA79E99}</Project>
-      <Name>Unity.PlasticSCM.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Rider.Editor.csproj">
-      <Project>{7FBB16FC-B03E-D73A-374C-500BE57FE49E}</Project>
-      <Name>Unity.Rider.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.csproj">
       <Project>{8C833DB4-B639-8217-AFD1-2134917804F7}</Project>

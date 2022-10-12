@@ -7,7 +7,7 @@ public class controller : MonoBehaviour
     public rewardHolder rewardHolder;
     public Image fillImg;
     public Text percentageText;
-    //public int increasePerIteration=20;
+    public Button claimButton;
     public float slowFactor=2f;
     private bool lerping;
     private reward currentReward;
@@ -58,12 +58,16 @@ public class controller : MonoBehaviour
         currentReward.isClaimed = true;
         loadNext();
     }
-
+    public void onClaim()
+    {
+        onRewardUnlocked();
+    }
     void Start()
     {
         fillImg.fillAmount = PlayerPrefs.GetFloat("value");        
         percentageText.text = fill + "%";
         currentReward = rewardHolder.rewards[currentRewardIndex];
+        claimButton.interactable = false;
     }
     void Update()
     {
@@ -79,11 +83,11 @@ public class controller : MonoBehaviour
             {
                 if (fillImg.fillAmount == 1)
                 {
-                    onRewardUnlocked();
+                    claimButton.interactable = true;
+                    //onRewardUnlocked();
                 }
                 else
                 {
-                   // Debug.Log(increasePerIterationCal);
                     PlayerPrefs.SetFloat("value", fillImg.fillAmount);
                     
                 }
@@ -103,6 +107,7 @@ public class controller : MonoBehaviour
         fillImg.sprite = currentReward.icon;
         fillImg.fillAmount = 0;
         percentageText.text = fill + "%";
+        claimButton.interactable = false;
     }
     private bool isReached(float a, float b)
     {
